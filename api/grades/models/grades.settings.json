@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grades",
+  "info": {
+    "name": "grades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gradeName": {
+      "type": "string"
+    },
+    "gradeID": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Question",
+  "info": {
+    "name": "Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Statement": {
+      "type": "text"
+    },
+    "Option1": {
+      "type": "string"
+    },
+    "Option2": {
+      "type": "string"
+    },
+    "Option3": {
+      "type": "string"
+    },
+    "Option4": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessons",
+  "info": {
+    "name": "lessons"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "course": {
+      "model": "courses",
+      "via": "lessons"
+    },
+    "quiz": {
+      "via": "lesson",
+      "model": "quiz"
+    }
+  }
+}

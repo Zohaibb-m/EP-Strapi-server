@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Quiz",
+  "info": {
+    "name": "Quiz"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "questions": {
+      "collection": "question"
+    },
+    "lesson": {
+      "model": "lessons",
+      "via": "quiz"
+    }
+  }
+}

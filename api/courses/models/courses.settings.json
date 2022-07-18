@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "courses"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courseName": {
+      "type": "string"
+    },
+    "grade": {
+      "model": "grades"
+    },
+    "subject": {
+      "model": "subjects"
+    },
+    "courseDescription": {
+      "type": "text"
+    },
+    "courseImage": {
+      "type": "string"
+    },
+    "lessons": {
+      "via": "course",
+      "collection": "lessons"
+    },
+    "users": {
+      "via": "courses",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
