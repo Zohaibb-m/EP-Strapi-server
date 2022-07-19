@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "Quiz",
   "info": {
-    "name": "Quiz"
+    "name": "Quiz",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,12 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "lesson": {
+      "via": "quiz",
+      "model": "lessons"
+    },
     "questions": {
+      "via": "quiz",
       "collection": "question"
     },
-    "lesson": {
-      "model": "lessons",
-      "via": "quiz"
+    "quizName": {
+      "type": "string"
     }
   }
 }

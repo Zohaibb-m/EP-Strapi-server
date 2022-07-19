@@ -26,6 +26,13 @@
     },
     "Option4": {
       "type": "string"
+    },
+    "Answer": {
+      "type": "string"
+    },
+    "quiz": {
+      "via": "questions",
+      "model": "quiz"
     }
   }
 }
