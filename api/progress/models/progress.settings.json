@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Progress",
+  "info": {
+    "name": "Progress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quizID": {
+      "type": "string"
+    },
+    "solvedCount": {
+      "type": "integer"
+    },
+    "user": {
+      "via": "progress",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

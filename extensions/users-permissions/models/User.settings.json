@@ -83,6 +83,10 @@
       "collection": "courses",
       "via": "users",
       "dominant": true
+    },
+    "progress": {
+      "model": "progress",
+      "via": "user"
     }
   }
 }
