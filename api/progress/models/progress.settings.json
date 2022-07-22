@@ -16,11 +16,6 @@
     },
     "solvedCount": {
       "type": "integer"
-    },
-    "user": {
-      "via": "progress",
-      "plugin": "users-permissions",
-      "model": "user"
     }
   }
 }

@@ -84,9 +84,8 @@
       "via": "users",
       "dominant": true
     },
-    "progress": {
-      "model": "progress",
-      "via": "user"
+    "progresses": {
+      "collection": "progress"
     }
   }
 }
