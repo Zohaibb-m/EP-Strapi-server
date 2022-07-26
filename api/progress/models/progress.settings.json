@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "Progress",
   "info": {
-    "name": "Progress"
+    "name": "Progress",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,6 +17,19 @@
     },
     "solvedCount": {
       "type": "integer"
+    },
+    "points": {
+      "type": "integer"
+    },
+    "lessonID": {
+      "type": "string"
+    },
+    "lessonPoints": {
+      "type": "integer"
+    },
+    "course_progress": {
+      "via": "progresses",
+      "model": "course-progress"
     }
   }
 }

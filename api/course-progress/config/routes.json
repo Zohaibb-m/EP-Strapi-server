@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/course-progresses",
+      "handler": "course-progress.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-progresses/count",
+      "handler": "course-progress.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/course-progresses/:id",
+      "handler": "course-progress.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/course-progresses",
+      "handler": "course-progress.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/course-progresses/:id",
+      "handler": "course-progress.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/course-progresses/:id",
+      "handler": "course-progress.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

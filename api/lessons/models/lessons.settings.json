@@ -28,6 +28,10 @@
     },
     "link": {
       "type": "text"
+    },
+    "points": {
+      "default": 0,
+      "type": "integer"
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courseProgress",
+  "info": {
+    "name": "courseProgress"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "progresses": {
+      "collection": "progress",
+      "via": "course_progress"
+    },
+    "course": {
+      "model": "courses",
+      "via": "course_progress"
+    },
+    "points": {
+      "type": "integer"
+    }
+  }
+}
