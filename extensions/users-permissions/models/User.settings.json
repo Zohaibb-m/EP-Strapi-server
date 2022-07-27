@@ -86,6 +86,9 @@
     },
     "progresses": {
       "collection": "progress"
+    },
+    "course_progresses": {
+      "collection": "course-progress"
     }
   }
 }
