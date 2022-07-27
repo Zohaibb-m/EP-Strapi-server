@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "courseProgress",
   "info": {
-    "name": "courseProgress"
+    "name": "courseProgress",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -15,12 +16,11 @@
       "collection": "progress",
       "via": "course_progress"
     },
-    "course": {
-      "model": "courses",
-      "via": "course_progress"
-    },
     "points": {
       "type": "integer"
+    },
+    "courseID": {
+      "type": "string"
     }
   }
 }

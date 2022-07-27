@@ -34,10 +34,6 @@
       "via": "courses",
       "plugin": "users-permissions",
       "collection": "user"
-    },
-    "course_progress": {
-      "via": "course",
-      "model": "course-progress"
     }
   }
 }
